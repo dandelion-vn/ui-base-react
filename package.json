@@ -1,8 +1,26 @@
 {
-  "name": "react-module-base",
-  "version": "1.0.0",
-  "description": "⚡ React Js.",
-  "main": "src/index.js",
+  "name": "ui-base-react",
+  "author": "Dao Huy Duc",
+  "version": "1.0.1",
+  "description": "⚡ UI Base Using ReactJs",
+  "private": true,
+  "engines": {
+    "node": ">= 10.16.0"
+  },
+  "bugs": {
+    "url": "https://github.com/dandelion-vn/ui-base-react/issues"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dandelion-vn/ui-base-react"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "base"
+  ],
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --open",
     "dev": "cross-env NODE_ENV=development webpack",
@@ -12,19 +30,6 @@
     "lint:fix": "eslint ./src/**/**.js --fix",
     "prepush": "yarn run lint",
     "format": "npm run prettier -- --write"
-  },
-  "keywords": [
-    "react",
-    "redux",
-    "webpack",
-    "styled-components",
-    "starter"
-  ],
-  "author": "Dao Huy Duc",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": ""
   },
   "homepage": "",
   "devDependencies": {
@@ -48,7 +53,7 @@
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "compression-webpack-plugin": "^3.0.0",
-    "core-js": "3",
+    "core-js": "^3.3.4",
     "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -61,6 +66,7 @@
     "eslint-plugin-react": "^7.16.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^4.2.0",
+    "fs-extra": "^8.1.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.9",
     "img-loader": "^3.0.1",
@@ -83,6 +89,7 @@
   },
   "dependencies": {
     "cross-env": "^6.0.3",
+    "promise": "^8.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
