@@ -1,21 +1,21 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import {Provider} from 'react-redux';
-import {Router} from 'react-router-dom';
-import "@src/style/site.css"
-import {App} from "@src/app/container";
-import {history} from "@src/lib/helper";
-import {configStore} from "@src/store"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+// import { Provider } from 'react-redux';
+// import { createGlobalStyle } from 'styled-components';
+// import store from './store';
+// import App from './components/App';
+// import reset from './constants/css/reset';
 
-const store = configStore(
-  window.REDUX_INITIAL_DATA
-);
-
+// const GlobalStyle = createGlobalStyle`${reset}`;
 ReactDOM.render(
-  <Provider store={store}>
-    <Router history={history}>
-      <App/>
-    </Router>
-  </Provider>,
-  document.getElementById("t")
+  <BrowserRouter>
+    {/*<>*/}
+    {/*  <Provider store={store}>*/}
+    {/*    <App/>*/}
+    {/*  </Provider>*/}
+    {/*  <GlobalStyle/>*/}
+    {/*</>*/}
+  </BrowserRouter>,
+  document.getElementById('root')
 );

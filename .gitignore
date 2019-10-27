@@ -26,25 +26,17 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 
-# node-waf conf
+# node-waf configuration
 .lock-wscript
 
-# Compiled binary addons (http://nodejs.org/api/addons.html)
+# Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-package-lock.json
+node_modules/
 jspm_packages/
 
-# Distribution directories
-dist/
-public/
-
-# Typescript v1 declaration files
+# TypeScript v1 declaration files
 typings/
 
 # Optional npm cache directory
@@ -65,5 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
-# cache loader
-.cache-loader/
+# next.js build output
+.next
